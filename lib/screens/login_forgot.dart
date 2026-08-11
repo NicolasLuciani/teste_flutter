@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
-class CreateAccount extends StatelessWidget {
-  const CreateAccount({super.key});
+class Login_forgot extends StatelessWidget {
+  const Login_forgot({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-      ),
 
       body: SafeArea(
         child: Container(
@@ -19,7 +15,7 @@ class CreateAccount extends StatelessWidget {
           padding: const EdgeInsets.only(
             left: 18,
             right: 18,
-            top: 40,
+            top: 90,
           ),
 
           decoration: BoxDecoration(
@@ -34,7 +30,7 @@ class CreateAccount extends StatelessWidget {
             children: [
 
               const Text(
-                "Create Account",
+                "Forgot Password",
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -45,117 +41,6 @@ class CreateAccount extends StatelessWidget {
 
               const SizedBox(height: 25),
 
-
-              TextField(
-
-                decoration: InputDecoration(
-
-                  hintText: "Firstname",
-
-                  hintStyle: const TextStyle(
-                    fontSize: 15,
-                    color: Colors.grey,
-                  ),
-
-
-                  filled: true,
-
-                  fillColor: const Color(0xfff1f1f1),
-
-
-                  contentPadding:
-                      const EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 0,
-                      ),
-
-
-                  border: OutlineInputBorder(
-
-                    borderRadius:
-                        BorderRadius.circular(4),
-
-                    borderSide:
-                        BorderSide.none,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 12),
-
-              TextField(
-
-                decoration: InputDecoration(
-
-                  hintText: "Lastname",
-
-                  hintStyle: const TextStyle(
-                    fontSize: 15,
-                    color: Colors.grey,
-                  ),
-
-
-                  filled: true,
-
-                  fillColor: const Color(0xfff1f1f1),
-
-
-                  contentPadding:
-                      const EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 0,
-                      ),
-
-
-                  border: OutlineInputBorder(
-
-                    borderRadius:
-                        BorderRadius.circular(4),
-
-                    borderSide:
-                        BorderSide.none,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 12),
-
-              TextField(
-
-                decoration: InputDecoration(
-
-                  hintText: "Email Address",
-
-                  hintStyle: const TextStyle(
-                    fontSize: 15,
-                    color: Colors.grey,
-                  ),
-
-
-                  filled: true,
-
-                  fillColor: const Color(0xfff1f1f1),
-
-
-                  contentPadding:
-                      const EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 0,
-                      ),
-
-
-                  border: OutlineInputBorder(
-
-                    borderRadius:
-                        BorderRadius.circular(4),
-
-                    borderSide:
-                        BorderSide.none,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 12),
 
               TextField(
 
@@ -193,7 +78,7 @@ class CreateAccount extends StatelessWidget {
               ),
 
 
-              const SizedBox(height: 30),
+              const SizedBox(height: 12),
 
 
               SizedBox(
@@ -206,7 +91,7 @@ class CreateAccount extends StatelessWidget {
                 child: ElevatedButton(
 
                   onPressed: () {
-                    Navigator.pushNamed(context, '/login');
+                    Navigator.pushNamed(context, '/home');
                   },
 
 
@@ -258,6 +143,33 @@ class CreateAccount extends StatelessWidget {
                     fontSize: 15,
 
                   ),
+
+
+                  children: [
+
+                    TextSpan(
+                      text:
+                          "Forgot your password? ",
+                    ),
+
+
+                    TextSpan(
+
+
+                      
+                      text: "Reset",
+
+
+
+                      style: TextStyle(
+
+                        fontWeight:
+                            FontWeight.bold,
+
+                      ),
+                    ),
+
+                  ],
                 ),
               ),
 

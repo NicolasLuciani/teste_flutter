@@ -155,7 +155,11 @@ class Login_password extends StatelessWidget {
 
                     TextSpan(
 
+
+                      
                       text: "Reset",
+
+
 
                       style: TextStyle(
 
