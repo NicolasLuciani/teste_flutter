@@ -4,6 +4,7 @@ import 'package:teste_flutter/screens/login-password.dart';
 import 'package:teste_flutter/screens/login.dart';
 import 'package:teste_flutter/screens/cadastro.dart';
 import 'package:teste_flutter/screens/home.dart';
+import 'package:teste_flutter/screens/login_forgot.dart';
 
 void main() {
   runApp(

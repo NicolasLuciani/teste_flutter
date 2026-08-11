@@ -132,45 +132,31 @@ class Login_password extends StatelessWidget {
               const SizedBox(height: 12),
 
 
-              RichText(
-
-                text: const TextSpan(
-
-                  style: TextStyle(
-
-                    color: Colors.black,
-
-                    fontSize: 15,
-
+              Row(
+                children: [
+                  const Text(
+                    "Forgot your password? ",
+                    style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
-
-
-                  children: [
-
-                    TextSpan(
-                      text:
-                          "Forgot your password? ",
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/login_forgot');
+                    },
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero, // Tira os espaçamentos internos do botão
+                      minimumSize: Size.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
-
-
-                    TextSpan(
-
-
-                      
-                      text: "Reset",
-
-
-
+                    child: const Text(
+                      "Reset",
                       style: TextStyle(
-
-                        fontWeight:
-                            FontWeight.bold,
-
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-
-                  ],
-                ),
+                  ),
+                ],
               ),
 
             ],
